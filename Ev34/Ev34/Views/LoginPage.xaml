@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Ev34.Views.LoginPage"
+             Title="LogIn"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Ingresar Datos" TextColor="Black" FontSize="25"/>
+        
+
+        
+            <Entry Placeholder="Usuario" x:Name="TxtUsuario" Text="{Binding TxtUsuario}" TextColor="Black"/>
+            <Entry Placeholder="Password" x:Name="Txtpassword" Text="{Binding Txtpassword}" TextColor="Black" IsPassword="True"/>
+            <Button Text="Ingresar" FontSize="20" x:Name="Ingresar" Command="{Binding LoginCommand}"
+                    BackgroundColor="Blue" TextColor="White" CornerRadius="10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
